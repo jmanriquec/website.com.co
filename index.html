@@ -1,13 +1,90 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Pagina de Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <title>Inicio OVI</title>
 </head>
-
 <body>
-	<h1>Bienvenid@ a mi sitio web</h1>
-	<p>hola soy otro cambio</p>
-	<p>Saludo amigos</p>
+    <header>
+        <!-- Este es el logo institucional que se muestra en la parte de arriba a la izquierda -->
+        <img src="img/logo.png" alt="" id="logo">
+        <h1 class="titulo_principal">Bienvenidos a la OVI de Diseño de Sitios Web</h1>
+        
+		<!--Dentro de la etiqueta <nav></nav> se encuentra el Menu-->
+		<nav id="menu_principal">
+            <ul id="menu">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">LECTURAS</a>
+                    <ul>
+                        <li><a href="#">Lectura1</a></li>
+                        <li><a href="#">Lectura2</a></li>
+                        <li><a href="#">Lectura3</a></li>
+                        <li><a href="#">Lectura4</a></li>
+                        <li><a href="#">Lectura5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MULTIMEDIA</a>
+                    <ul>
+                        <li><a href="#">Multimedia1</a></li>
+                        <li><a href="#">Multimedia2</a>
+                            <ul>
+                                <li><a href="#">Multimedia1</a></li>
+                                <li><a href="#">Multimedia2</a></li>
+                                <li><a href="#">Multimedia3</a></li>
+                            </ul>                        
+                        </li>
+                        <li><a href="#">Multimedia3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ACTIVIDADES</a>
+                    <ul>
+                        <li><a href="#">Actividad1</a></li>
+                        <li><a href="#">Actividad2</a></li>
+                        <li><a href="#">Actividad3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">AUTORES</a></li>
+            </ul>
+        </nav>
+		<!--Aquí termina el menu-->
+		
+    </header>
+    <section class="principal">        
+        <section class="central">
+            <h2>Presentación General del Curso OVI Diseño de Sitios Web</h2>
+            <article>
+                <h3>Articulo 1: Where does it come from?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, est aperiam. Expedita nam harum beatae, impedit consequuntur enim eius architecto incidunt iste obcaecati quasi mollitia, quia numquam eum laboriosam iusto.</p>
+                <div class="video">
+                <iframe src="https://www.youtube.com/embed/w98PuW0XSVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quasi, voluptas voluptatibus nisi eius, repellendus quam libero architecto modi fuga officiis laudantium obcaecati id in ullam maiores porro, dolorum soluta.</p>
+            </article>
+            <hr>
+            <article>
+                <h3>Articulo 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aut vel quia, id maxime omnis porro doloremque distinctio quod tenetur obcaecati numquam at culpa, eaque exercitationem laborum? Similique, doloremque fugiat!</p>
+            </article>
+        </section>
+        <section class="derecha">
+            <aside>
+                <a class="twitter-timeline" data-width="220" data-height="400" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <hr>
+            <p>Contador de Visitas</p>
+            <div id="sfcfu3cxwflphfn5r46rxf5cc7efk4je59e"></div><script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=fu3cxwflphfn5r46rxf5cc7efk4je59e&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de paginas web"><img src="https://counter9.stat.ovh/private/contadorvisitasgratis.php?c=fu3cxwflphfn5r46rxf5cc7efk4je59e" border="0" title="contador de paginas web" alt="contador de paginas web"></a></noscript>
+            </aside>
+        </section>
+    </section>
+    <footer>
+        <p>Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23<br>
+            PBX:<a style="color:#FFF;" href="tel:+5713443700"> ( +57 1 ) 344 3700</a> Bogotá D.C., Colombia<br>
+            Línea nacional gratuita desde Colombia: <a style="color:#FFF;" href="tel:018000115223">018000115223</a><br>
+            Atención al usuario: atencionalusuario@unad.edu.co<br>
+            Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional
+            </p>
+    </footer>
+    
 </body>
 </html>

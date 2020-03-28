@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+}
+#logo{
+    margin:20px 0px 0px 100px ;
+    clear: left;
+    display: block;
+}
+header{
+    width: 100% !important;
+}
+.titulo_principal{
+    color: #000;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: 0px 0px 0px 200px;
+    clear: right;
+}
+nav#menu_principal{
+    margin: 20px auto;
+    width: 100% !important;
+}
+
+
+#menu, #menu ul{
+    margin: 60px 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#menu{
+    width: 100% !important;
+    border: 1px solid #107677;
+    background: #111;
+    background: linear-gradient(#2a4885, #577cc9);
+    box-shadow: 0 2px 2px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Reseteamos elementos del #menu*/
+
+#menu:before,
+#menu:after{
+    content: "";
+    display: block;
+}
+#menu:after{
+    clear: both;
+}
+/*Terminamos Recet elementos del #menu*/
+#menu li{
+    float: left;
+    border:1px solid gray;
+    position: relative;
+}
+#menu a{
+    float: left;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+}
+#menu ul{
+    margin: 20px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top:38px;
+    left: 0px;
+    z-index: 1;
+    background: linear-gradient(#2a4885, #577cc9);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0,3);
+    border-radius: 3px;
+    transition: all 0,2s ease-in-out;
+}
+
+#menu li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu ul ul{
+    top:0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0,3);
+}
+
+#menu ul a{
+    padding: 10px;
+    width: 130px;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a.hover{
+    background: linear-gradient(#2a4885, #577cc9);
+
+}
+
+#menu ul li:first-child>a:after{
+    content: "";
+    position: absolute;
+    left: 40px;
+    top:-6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px #1ebdbe;
+}
+
+#menu ul ul li:first-child > a:after{
+    left: -6px;
+    top:50%;
+    margin-top: -6px;
+    border-left: 0;
+    border-top: 6px solid transparent;
+    border-right: 6px #577cc9;
+    border-bottom: 6px transparent;
+}
+
+.principal{
+    width: 90%;
+    min-width: 90%;
+    min-height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.central h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.central h3{
+    margin: 20px 0px 20px 0px;
+}
+.centra p{
+    text-align: left;
+}
+section .central{
+    width: 78%;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0,3);
+}
+.video{
+    text-align: center;
+    margin: 10px;
+}
+.video iframe{
+    width:500px; 
+    height:280px;
+}
+.derecha aside{
+    width: 18%;
+    height: 400px;
+    float: right;
+    display: block;
+    /*background: linear-gradient(#2a4885, #577cc9);*/
+    color:#577cc9;
+    text-align: center;
+    padding: 3px 3px px 3px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.derecha aside a{
+    color:#fff;
+}
+
+@media screen and (min-width: 1000px){
+footer {
+    background: #333 url(../img/logoUNADMobile-HD.png) no-repeat top 30px left 10%;
+    background-size: 155px 38px;
+    padding: 10px 10px 10px 30%;
+    width: 70% !important; 
+    color: #FFF;
+    font-size: 13px;
+}
+}
+
