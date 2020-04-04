@@ -18,7 +18,7 @@ header{
 }
 
 
-/*Inicia CSS del Slider*/
+/*Inicia CSS del Slider automatico*/
 .slider{
     width: 100%;
     height: 350px;
@@ -129,7 +129,7 @@ header{
         float: left;
         position: relative;
         height: auto;
-        padding-left: 20px;
+        padding-left: 0;
     }
 
     #menu li:hover{
@@ -153,23 +153,22 @@ header{
         top:60px;
         left: 0px;
         z-index: 1;
-        background-color: #E7B200;
+        background-color: #01537c;
         box-shadow: 0 -1px 0 rgba(255, 255, 255, 0,3);
         border-radius: 0px 3px 3px 3px;
         transition: all 0,4s ease-in-out;
+        display: block;
+        padding: 0;
         width: 200px;
     }
 
     #menu ul:hover{
         transition: all 0,1s ease-in-out;
-        background-color: #E7B200;
     }
     #menu li:hover > ul{
         opacity: 1;
         visibility: visible;
         margin: 0;
-        background-color: #E7B200;
-
     }
 
     #menu ul ul{
@@ -180,8 +179,8 @@ header{
     }
 
     #menu ul a{
-        padding: 10px;
-        width: 130px;
+        padding: 15px 0px 15px 25px;
+        width: 175px;
         display: block;
         white-space: nowrap;
         float: none;
@@ -254,14 +253,26 @@ header{
         background: #fff;
     }
 
-    .video{
-        text-align: center;
-        margin: 10px;
-    }
-    .video iframe{
-        width:500px; 
-        height:280px;
-    }
+    section.principal section.central article .video-responsive{
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+        z-index: 3;
+        margin: 0 80px 0 80px;
+     }
+
+     .video-responsive iframe,
+     .video-responsive object,
+     .video-responsive embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+}  
     .derecha aside{
         width:230px !important;
         height: auto;
@@ -313,13 +324,14 @@ header{
 		height:100%;
 		left:-100%;
 		margin:0;
-		position: fixed;
+        position: fixed;
+        z-index: 999;
 
     }
     
     .menu-fixed {  /*Sirve para dejar el menu pegado en la parte superior cuando se hace scroll hacia abajo*/
         position:fixed;
-        z-index:10;
+        z-index:1000;
         top:0;
         left:0;
         width:100%;
@@ -339,7 +351,7 @@ header{
     	-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
         box-sizing:border-box;
-        z-index: 15;
+        z-index: 9999;
         position: fixed;
         width: 100%;
     }
@@ -433,7 +445,7 @@ header{
 
      section.principal section.central h3{
         text-align: left;
-        margin: 5px 10px 5px 10px;
+        margin: 20px 10px 20px 10px;
      }
 
      section.principal section.central p{
@@ -441,17 +453,25 @@ header{
          margin: 5px 20px 5px 20px;
      }
 
-     section.principal section.central article .video{
-         background: none;
-         width: 100%;
-         margin: 10px 0;
+     section.principal section.central article .video-responsive{
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
      }
 
-     section.principal section.central article .video iframe{
-         width: 100%;
-         height: 350px;
-         max-height:400px ;
-     }     
+     .video-responsive iframe,
+     .video-responsive object,
+     .video-responsive embed {
+         display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:1;
+}  
 
      section.principal section.derecha aside{
         width: 100%;
@@ -480,7 +500,7 @@ header{
         color:#577cc9;
     }
     
-    .count{
+    .contador{
         text-align: center;
         display: block;
         float: none;
@@ -488,8 +508,8 @@ header{
     }
 
     footer {
-        background: #333 url(../img/logoUNADMobile-HD.png) no-repeat top 30px left 10%;
-        background-size: 120px 25px;
+        background: #333 url(../img/logo_vertical_blanco.png) no-repeat top 40% left 5%;
+        background-size: 70px 50px;
         padding: 10px 10px 10px 30%;
         width: 69,99% !important; 
         color: #FFF;
