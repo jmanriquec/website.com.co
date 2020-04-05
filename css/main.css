@@ -61,9 +61,8 @@ header{
 }
 /*Termina CSS del Slider*/
 
-/*Comienzan los estilos de tamaño desktop despues de 801 px*/
 
-@media(min-width: 801px){
+
 
     #logo{
         margin:15px 0px 15px 80px ;
@@ -81,6 +80,38 @@ header{
         margin:15px 80px 15px 20px ;
         display: block;
     }
+
+    .tema-responsive{
+        width: 100%;
+        height: 100%;
+     /*IMPORTANTE*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tema-responsive .tema{
+        width:27%;
+        min-width: 300px;
+        background: #004669;
+        margin: 10px;
+        padding: 30px;      
+        background: #fff;
+        box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
+    }
+
+    .tema-responsive .tema img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+/*Comienzan los estilos de tamaño desktop despues de 801 px*/
+
+@media(min-width: 1218px){       
+
 
     nav.menu_principal{
         width: 100% !important;
@@ -145,6 +176,7 @@ header{
         font: bold 12px Arial, Helvetica;
         height: 100%;
     }
+
     #menu ul{
         margin: 0px 0 0 0;
         opacity: 0;
@@ -210,82 +242,116 @@ header{
         border-top: 6px solid transparent;
         border-right: 6px #577cc9;
         border-bottom: 6px transparent;
-    }
+    }    
+}
 
-    /*Esta linea esconde el menu movil*/
+/*Terminan los estilos para tamaño desktop*/
 
-    .menu_bar{
-        display: none;
-    }
 
-    .principal{
-        width: 100%;
-        min-width: 90%;
-        min-height: 400px;
-        margin: auto;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
 
-    }
+/*Estilos en general*/
+/*Esta linea esconde el menu movil*/
 
-    hr{
-        margin: 20px 0px;
-    }
-    .central h2{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .central h3{
-        margin: 20px 0px 20px 0px;
-    }
-    .centra p{
-        text-align: left;
-    }
-    section .central{
-        width: 70%;
-        float: left;
-        margin: 0px 20px 20px 20px;
-        padding: 30px;
-        background: #fff;
-        box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
-        overflow: auto;
-        background: #fff;
-    }
+.menu_bar{
+    display: none;
+}
 
-    section.principal section.central article .video-responsive{
-        position: relative;
-        padding-bottom: 56.25%; /* 16/9 ratio */
-        padding-top: 30px; /* IE6 workaround*/
-        height: 0;
-        overflow: hidden;
-        z-index: 3;
-        margin: 0 80px 0 80px;
-     }
+.principal{
+    width: 100%;
+    min-width: 90%;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+    display: block;
+}   
 
-     .video-responsive iframe,
-     .video-responsive object,
-     .video-responsive embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
+hr{
+    margin: 20px 0px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3{
+    margin: 20px 0px 20px 0px;
+}
+p{
+    text-align: left;
+}
+section .central{
+    width: 70%;
+    float: left;
+    margin: 0px 20px 20px 3%;
+    padding: 30px;
+    background: #fff;
+    box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
+    overflow: auto;
+    background: #fff;
+}
+
+section.principal section.central article .video-responsive{
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    z-index: 3;
+    margin: 0 80px 0 80px;
+ }
+
+ .video-responsive iframe,
+ .video-responsive object,
+ .video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }  
-    .derecha aside{
-        width:230px !important;
-        height: auto;
+.derecha aside{
+    width:230px !important;
+    height: auto;
+    background: #fff;
+    float: right;
+    color:#577cc9;
+    padding: 5px;
+    margin: 0 3% 0 0;
+    text-align: center;
+    box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
+}
+.derecha aside a{
+    color:#fff;
+}
+
+footer {
+    background: #333 url(../img/logoUNADMobile-HD.png) no-repeat top 30px left 10%;
+    background-size: 155px 38px;
+    padding: 10px 10px 10px 30%;
+    width: 69,99% !important; 
+    color: #FFF;
+    font-size: 13px;
+    margin-top: 10px;
+}
+/*Terminan estilos en general*/
+
+
+
+
+@media(max-width: 1217px){
+
+    section .central{
+        width: 100%;
+        float: none;
+        margin-right:auto;
+        padding: 0;
         background: #fff;
-        float: left;
-        color:#577cc9;
-        padding: 5px;
-        text-align: center;
         box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
+        overflow: hidden;
+        background: #fff;
     }
-    .derecha aside a{
-        color:#fff;
-    }
+
 
     footer {
         background: #333 url(../img/logoUNADMobile-HD.png) no-repeat top 30px left 10%;
@@ -297,9 +363,9 @@ header{
         margin-top: 10px;
     }
 
-}
+    
 
-/*Terminan los estilos para tamaño desktop*/
+}
 
 
 /*Comienzan Estilos para dispositivos moviles pantalla =< a 800px*/
@@ -438,17 +504,17 @@ header{
          box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
      }
 
-     section.principal section.central h2{
+     h2{
          text-align: center;
          margin: 5px 10px 5px 10px;
      }
 
-     section.principal section.central h3{
+    h3{
         text-align: left;
         margin: 20px 10px 20px 10px;
      }
 
-     section.principal section.central p{
+    p{
          text-align: left;
          margin: 5px 20px 5px 20px;
      }
@@ -459,6 +525,7 @@ header{
         padding-top: 30px; /* IE6 workaround*/
         height: 0;
         overflow: hidden;
+        margin: 0;
      }
 
      .video-responsive iframe,
@@ -471,17 +538,26 @@ header{
         width: 100%;
         height: 100%;
         z-index:1;
-}  
+    }  
 
-     section.principal section.derecha aside{
+     section.principal section.derecha{
         width: 100%;
-        height: auto;
+        display: flex;
+        height: 100%;
         padding: 20px 0;
-        margin: 0 0 30px 0;
+        margin:0 0 10px 0;
         justify-content: center;
         box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
         overflow: auto;
     }
+
+    section.principal section.derecha aside{
+        width: 100%;        
+        box-shadow:  none;
+        background: none;
+
+    }
+
     section.principal section.derecha aside .twitter-timeline{
         margin: 10px 30px;
         width: 400px;
@@ -517,5 +593,22 @@ header{
         margin-top: 10px;
     }
 
-     /*Comienzan los estilos del contenio de la pagina*/   
+     /*Terminan los estilos del contenio de la pagina*/   
 }
+
+
+
+.padre {
+    background: yellow;
+    height: 100%;
+    /*IMPORTANTE*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .hijo {
+    background: red;
+    width: 120px;
+    margin: 20px;
+  }
