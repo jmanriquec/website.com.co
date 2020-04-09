@@ -2,9 +2,9 @@
 
 *{
     margin: 0;
-    padding: 0;
-    list-style: none;
+    padding: 0;    
 }
+
 body{
     background: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -18,7 +18,7 @@ header{
 }
 
 
-/*Inicia CSS del Slider automatico*/
+/*Inicia CSS del Slider automatico ==================================*/
 .slider{
     width: 100%;
     height: 350px;
@@ -59,60 +59,12 @@ header{
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
 }
-/*Termina CSS del Slider*/
+/*Termina CSS del Slider ============================================*/
 
 
 
-
-    #logo{
-        margin:15px 0px 15px 80px ;
-        display: block;
-        width: 200px;
-        float: left;
-    }
+/*Comienza los estilos para el menú =================================*/
     
-    .titulo_principal{
-        color: #888;
-        font-size: 22px;
-        float: right;
-        display: block;
-        text-align: center;
-        margin:15px 80px 15px 20px ;
-        display: block;
-    }
-
-    .tema-responsive{
-        width: 100%;
-        height: 100%;
-     /*IMPORTANTE*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .tema-responsive .tema{
-        width:27%;
-        min-width: 300px;
-        background: #004669;
-        margin: 10px;
-        padding: 30px;      
-        background: #fff;
-        box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
-    }
-
-    .tema-responsive .tema img{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-/*Comienzan los estilos de tamaño desktop despues de 801 px*/
-
-@media(min-width: 1218px){       
-
-
     nav.menu_principal{
         width: 100% !important;
         display: flex;
@@ -191,7 +143,7 @@ header{
         transition: all 0,4s ease-in-out;
         display: block;
         padding: 0;
-        width: 200px;
+        width: 230px;
     }
 
     #menu ul:hover{
@@ -212,7 +164,7 @@ header{
 
     #menu ul a{
         padding: 15px 0px 15px 25px;
-        width: 175px;
+        width: 205px;
         display: block;
         white-space: nowrap;
         float: none;
@@ -243,50 +195,120 @@ header{
         border-right: 6px #577cc9;
         border-bottom: 6px transparent;
     }    
-}
 
-/*Terminan los estilos para tamaño desktop*/
-
-
-
-/*Estilos en general*/
-/*Esta linea esconde el menu movil*/
+        /*Esta linea esconde el menu movil*/
 
 .menu_bar{
     display: none;
 }
 
+
+/*Terminan los estilos para el menú =================================*/
+
+
+
+    #logo{
+        margin:15px 0px 15px 80px ;
+        display: block;
+        width: 200px;
+        float: left;
+    }
+    
+    .titulo_principal{
+        color: #888;
+        font-size: 22px;
+        float: right;
+        display: block;
+        text-align: center;
+        margin:15px 80px 15px 20px ;
+        display: block;
+    }
+
+    
 .principal{
     width: 100%;
-    min-width: 90%;
     min-height: 400px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px 0;
     overflow: hidden;
-    display: block;
-}   
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+
+.principal li{
+    margin: 5px 0 5px 50px;
+    width: 100%;
+}
+
+.container-informacion{
+    width: 85%;
+    display: flex;
+    padding: 20px 4%;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:  2px 4px 15px -9px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.container-informacion img{
+    width: 60%;
+    margin: 10px 0;
+}
 
 hr{
     margin: 20px 0px;
+    width: 100%;
 }
 h2{
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 h3{
     margin: 20px 0px 20px 0px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+h4{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    text-align: left;
+    font-size: 16px;
+}
+
+h5{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    text-align: left;
+    font-size: 16px;
+
 }
 p{
+    width: 100%;
+    margin: 13px 0;
     text-align: left;
+    font-size: 16px;
 }
+
+a{
+    width: 100%;
+}
+
+span{
+    font-weight: bold;
+}
+
 section .central{
     width: 70%;
     float: left;
-    margin: 0px 20px 20px 3%;
+    margin: 0 10px 10px 10px;
     padding: 30px;
     background: #fff;
-    box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
-    overflow: auto;
+    box-shadow:  2px 4px 15px -9px rgba(0,0,0,0.75);
+    overflow: hidden;
     background: #fff;
 }
 
@@ -296,7 +318,7 @@ section.principal section.central article .video-responsive{
     padding-top: 30px; /* IE6 workaround*/
     height: 0;
     overflow: hidden;
-    z-index: 3;
+    z-index: 1;
     margin: 0 80px 0 80px;
  }
 
@@ -317,12 +339,199 @@ section.principal section.central article .video-responsive{
     float: right;
     color:#577cc9;
     padding: 5px;
-    margin: 0 3% 0 0;
+    margin: 0 5px;
     text-align: center;
-    box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
+    box-shadow:  2px 4px 15px -9px rgba(0,0,0,0.75);
 }
 .derecha aside a{
     color:#fff;
+}
+
+.container-tema{
+    width: 90%;
+    display: flex;
+    padding: 20px 4%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tema-responsive{
+    display: flex;
+    flex-flow: wrap;   
+    margin: 0;
+    width: 100%;
+}
+
+.tema-responsive .tema{
+    width:32%;
+    height: auto;
+    background: #004669;
+    margin: 5px .5%;
+    padding: 0;
+    background: #fff;
+    box-shadow:  2px 4px 15px -9px rgba(0,0,0,0.75);
+    overflow: hidden;
+    display: flex;    
+    justify-content: center;
+    text-align: justify;
+    flex-flow: wrap;
+}
+
+.tema:hover *{
+    background: #333;
+    color: #fff;
+}
+.tema-responsive .tema img{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.tema a{
+    text-decoration: none;
+    color: #444;
+}
+
+.tema-responsive .tema h3{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tema-responsive .tema p{
+    margin: 20px 0;
+    width: 90%;
+}
+
+/*Autores ===================================================================================*/
+
+.autores{
+    width:32%;    
+    box-shadow:  2px 4px 15px -9px rgba(0,0,0,0.75);
+    background: #fff;
+    margin: 5px .5%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.tema-responsive .autores img{
+    width: 150px;
+    height: 155px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.autores h3{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+.autores p{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.autores a{
+    color: #01537c;
+    text-decoration: none;
+}
+
+.autores .skype{
+    font-style: italic;
+    color: #222;
+    font-size: 15px;
+}
+
+/*Limitamos el texto con ... ======================================================================*/
+
+.tema * {
+    margin: 0; padding: 0; border: 0 none; position: relative;
+  }
+  *, *:after, *:before {
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  }
+
+  .tema p {
+    background: #fff;
+    max-height: 6rem;
+    overflow: hidden;
+    text-align: justify;
+    padding: 0 1rem;
+    display: block;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+  }
+  .tema p:before {
+    content:'...';
+    position: absolute;
+    bottom: 0;
+    right: .2rem;
+  }
+  .tema p::after {
+    content: '';
+    background: inherit;
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 1.5rem;
+    z-index: 1;
+    
+  }
+  /* Sirve para que al pasar el mouse se muestre el texto oculto*/
+  /*
+  .tema p:hover::before {
+    max-height: none;
+    content: ' ';
+  }
+
+  .tema p:hover {
+    max-height: none;
+  }*/
+  /* Finaliza Sirve para que al pasar el mouse se muestre el texto oculto*/
+  
+
+.contenido-pdf{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.contenido-pdf iframe{
+    width:80%; 
+    height:680px;
+    margin: 0 0 20px 0;
+}
+
+.cita-bibliografica blockquote{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.cita-bibliografica p{
+    padding: 0;
+    font-size: 11px;
+    font-style: oblique;
+    color: #666;
+}
+
+.cita-bibliografica a{
+    font-size: 11px;
+    font-style: oblique;
+    color: rgb(22, 75, 105);
 }
 
 footer {
@@ -336,40 +545,28 @@ footer {
 }
 /*Terminan estilos en general*/
 
+/*Terminan los estilos para tamaño desktop*/
 
 
 
-@media(max-width: 1217px){
+@media(max-width: 1290px){
 
-    section .central{
-        width: 100%;
-        float: none;
-        margin-right:auto;
-        padding: 0;
-        background: #fff;
-        box-shadow:  2px 4px 15px -4px rgba(0,0,0,0.75);
-        overflow: hidden;
-        background: #fff;
+    /*Pendiente ===============================================================*/
+
+    .tema-responsive .tema{
+        width: 35%;        
     }
-
-
-    footer {
-        background: #333 url(../img/logoUNADMobile-HD.png) no-repeat top 30px left 10%;
-        background-size: 155px 38px;
-        padding: 10px 10px 10px 30%;
-        width: 69,99% !important; 
-        color: #FFF;
-        font-size: 13px;
-        margin-top: 10px;
-    }
-
-    
-
 }
+
 
 
 /*Comienzan Estilos para dispositivos moviles pantalla =< a 800px*/
 @media(max-width: 800px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
     #logo{
         display: none;  /*Ocultamos el logo de la UNAD*/
@@ -430,27 +627,43 @@ footer {
         font-weight: bold;
     }
 
+    nav.menu_principal{
+        height: 100%;
+        width: 80% !important;
+    }
+
     header nav.menu_principal #menu{
         box-shadow:0px 4px 3px rgba(0,0,0,.5);
         background: #044f75;
         color: #fff;
         margin: 0;
-        padding: 40px 0;
-        display: block;
-        overflow: auto;
+        padding: 0;
+        overflow: scroll;
         position: absolute;
-        height: 92%;
-        bottom: 0;
+        height: 100%;
+        top: 60px;
         width: 100%;
         z-index: 5;
+        display: block;        
+    }
+
+
+    header nav.menu_principal #menu li{
+        height: 50px;
+        width: 100%;
+        background: none;
+        margin: 0;
+        border-bottom:1px solid rgba(255,255,255, .3);
     }
 
     header nav.menu_principal #menu a{
         text-decoration: none;
         color: #fff;
-        padding: 10px 20px;
-        display: block;
-        border-bottom:1px solid rgba(255,255,255, .3);
+        padding:20px 30px;
+        display: block;        
+        width: 100%;
+        height: 100%;
+        margin: 0;
     }
 
     header nav.menu_principal #menu ul{
@@ -461,8 +674,6 @@ footer {
         display:block;
 		float:none;
         border-bottom:1px solid rgba(255,255,255, .3);
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     header nav.menu_principal #menu a:active{
@@ -495,6 +706,10 @@ footer {
      section.principal{
          width: 97%;
          padding: 0 1.5%;
+         display: flex;
+         margin: 0;
+         justify-content: center;
+         flex-wrap: wrap;
      }
 
      section.principal section.central{
@@ -531,7 +746,7 @@ footer {
      .video-responsive iframe,
      .video-responsive object,
      .video-responsive embed {
-         display: block;
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -583,6 +798,18 @@ footer {
         display: block;
     }
 
+    .tema-responsive .tema{
+        width: 100%;        
+    }
+
+    .tema-responsive .tema img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+
     footer {
         background: #333 url(../img/logo_vertical_blanco.png) no-repeat top 40% left 5%;
         background-size: 70px 50px;
@@ -595,20 +822,3 @@ footer {
 
      /*Terminan los estilos del contenio de la pagina*/   
 }
-
-
-
-.padre {
-    background: yellow;
-    height: 100%;
-    /*IMPORTANTE*/
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .hijo {
-    background: red;
-    width: 120px;
-    margin: 20px;
-  }
